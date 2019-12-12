@@ -91,10 +91,47 @@ footer {
   margin-left: 12px;
 }
 #footer-middle {
-  background-color: red;
-  width: 460px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+#footer-middle .player-buttons {
+  display: flex;
+  padding: 0 140px;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer-middle .player-buttons .fa-play-circle {
+  font-size: 32px;
+  margin: 0 9px;
+}
+#footer-middle .player-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0 12px;
+}
+#footer-middle time {
+  font-size: 10px;
+}
+#footer-middle .progress-bar {
+  display: inline-block;
+  width: 428px;
+  height: 4px;
+  background-color: #5a5a5a;
+  border-radius: 2px;
+  margin: 0 27px;
+}
+#footer-middle .progress-bar:after {
+  content: " ";
+  display: block;
+  width: 85px;
+  height: 4px;
+  background-color: #c1c1c1;
+  border-radius: 2px;
+}
+
 #footer-right {
   width: 230px;
   height: 100%;
