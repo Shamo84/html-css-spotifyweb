@@ -7,6 +7,11 @@
   font-weight: 700;
 }
 
+body {
+}
+main {
+  overflow-y: scroll;
+}
 img {
   height: 50px;
 }
@@ -37,6 +42,7 @@ p {
   background-color: #141922;
   padding-top: 102.5px;
   padding-left: 242.5px;
+
 }
 #main-content #upgrade {
   height: 90px;
@@ -49,6 +55,7 @@ p {
 }
 #main-content > div:not(:first-child) {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 #main-content .song {
@@ -62,7 +69,6 @@ p {
   height: auto;
   margin: 0 auto;
 }
-
 #main-content #upgrade a {
   line-height: 90px;
   text-transform: uppercase;
@@ -72,6 +78,9 @@ p {
   margin-right: 20px;
   padding: 11.5px 36px;
   border-radius: 26px;
+}
+#main-content #artisti img {
+  border-radius: 50%;
 }
 footer {
   height: 90px;
