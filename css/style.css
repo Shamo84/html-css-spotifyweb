@@ -20,6 +20,9 @@ main {
 .text-grey {
   color: #878787;
 }
+p {
+  color: #878787;
+}
 #side-nav {
   height: 100%;
   width: 230px;
@@ -32,8 +35,8 @@ main {
   width: 100%;
   min-height: 100%;
   background-color: #141922;
-  padding-top: 90px;
-  padding-left: 230px;
+  padding-top: 102.5px;
+  padding-left: 242.5px;
 }
 #main-content #upgrade {
   height: 90px;
@@ -43,6 +46,21 @@ main {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: right;
+}
+#main-content > div:not(:first-child) {
+  display: flex;
+  align-items: flex-start;
+}
+#main-content .song {
+  display: inline-block;
+  text-align: center;
+  width: 178px;
+  margin: 7.5px;
+}
+#main-content .song img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 #main-content #upgrade a {
