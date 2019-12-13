@@ -18,6 +18,10 @@ img {
 a {
   text-decoration: none;
   color: white;
+  display: inline-block;
+}
+h3 {
+  font-size: 16px;
 }
 main {
   height: calc(100vh - 90px);
@@ -35,23 +39,54 @@ p {
   left: 0;
   top: 0;
   background-color: black;
+  padding: 20px;
+}
+#side-nav .index{
+  display: flex;
+  align-items: center;
+}
+#side-nav #plus-icon {
+  height: 37px;
+  width: 37px;
+  background-color: #a3a3a3;
+  display: inline-block;
+  text-align: center;
+}
+#side-nav #plus-icon .fa-plus {
+  font-size: 20px;
+  line-height: 37px;
+  color: black;
 }
 #main-content {
   width: 100%;
   min-height: 100%;
   background-color: #141922;
   padding-top: 102.5px;
-  padding-left: 242.5px;
-
+  padding-left: 250px;
 }
 #main-content #upgrade {
   height: 90px;
-  width: 100%;
+  width: calc(100% - 230px);
   position: fixed;
   top: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#main-content #upgrade a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid white;
+  margin-right: 20px;
+  padding: 11.5px 36px;
+  border-radius: 26px;
+}
+#main-content p {
+  font-size: 12px;
 }
 #main-content > div:not(:first-child) {
   display: flex;
@@ -62,22 +97,12 @@ p {
   display: inline-block;
   text-align: center;
   width: 178px;
-  margin: 7.5px;
+  margin-right: 15px;
 }
 #main-content .song img {
   width: 100%;
   height: auto;
   margin: 0 auto;
-}
-#main-content #upgrade a {
-  line-height: 90px;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 700;
-  border: 2px solid white;
-  margin-right: 20px;
-  padding: 11.5px 36px;
-  border-radius: 26px;
 }
 #main-content #artisti img {
   border-radius: 50%;
