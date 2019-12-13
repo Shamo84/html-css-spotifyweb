@@ -29,11 +29,8 @@ h3 {
 main {
   height: calc(100vh - 90px);
 }
-.text-grey {
-  color: #878787;
-}
 p {
-opacity: 0.53;
+  opacity: 0.53;
 }
 #side-nav {
   height: 100%;
@@ -101,7 +98,7 @@ opacity: 0.53;
 #side-nav ul {
   font-size: 13px;
   line-height: 36px;
-  cursor: default;
+  cursor: pointer;
 }
 #side-nav ul li {
   opacity: 0.53;
@@ -187,9 +184,36 @@ transform: scale(1.1);
 #main-content .song img {
   width: 100%;
   height: auto;
-  margin: 0 auto 10px;
+  margin: 0 auto;
+}
+#main-content .song .layover {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+#main-content .song .layover i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  display: none;
+}
+#main-content .song:hover .layover img {
+  opacity: 0.7;
+}
+#main-content .song:hover .layover i {
+  display: block;
+}
+#main-content .song h3 {
+  margin-top: 10px;
 }
 #main-content #artisti img {
+  border-radius: 50%;
+}
+#main-content #artisti .layover {
   border-radius: 50%;
 }
 footer {
@@ -223,6 +247,16 @@ footer {
 }
 #footer-left #title-mini #subtitle-mini {
   font-size: 10px;
+  opacity: 0.53;
+}
+#footer-left #title-mini:hover #subtitle-mini {
+  opacity: 1;
+}
+#footer-left .far {
+  opacity: 0.53;
+}
+#footer-left .far:hover {
+  opacity: 1;
 }
 #footer-left .fa-folder {
   margin-left: 12px;
@@ -243,6 +277,13 @@ footer {
   font-size: 32px;
   margin: 0 9px;
 }
+#footer-middle .player-buttons .fas:hover {
+  cursor: pointer;
+}
+#footer-middle .player-buttons .fa-play-circle:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
 #footer-middle .player-bar {
   display: flex;
   justify-content: space-between;
@@ -260,15 +301,28 @@ footer {
   border-radius: 2px;
   margin: 0 27px;
 }
-#footer-middle .progress-bar:after {
-  content: " ";
+#footer-middle .progress-bar:hover {
+  cursor: pointer;
+}
+#footer-middle .progress-bar:hover #prog-bar-overlay {
+  background-color: #adff2f;
+}
+#footer-middle .progress-bar:hover #prog-bar-overlay i{
   display: block;
+}
+#footer-middle #prog-bar-overlay {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: 85px;
   height: 4px;
   background-color: #c1c1c1;
   border-radius: 2px;
 }
-
+#footer-middle #prog-bar-overlay i {
+  display: none;
+  font-size: 12px;
+}
 #footer-right {
   width: 230px;
   height: 100%;
