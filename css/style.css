@@ -32,6 +32,8 @@ main {
 p {
   opacity: 0.53;
 }
+
+/* SIDE NAVBAR  */
 #side-nav {
   height: 100%;
   width: 230px;
@@ -106,6 +108,8 @@ p {
 #side-nav ul li:hover {
   opacity: 1;
 }
+
+/* MAIN CONTENT */
 #main-content {
   width: 100%;
   min-height: 100%;
@@ -124,6 +128,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  z-index: 10;
 }
 #main-content #upgrade a {
   text-transform: uppercase;
@@ -137,7 +142,6 @@ p {
 #main-content #upgrade a:hover {
 transform: scale(1.1);
 }
-
 #main-content #main-menu {
   margin-top: 0;
 }
@@ -172,14 +176,15 @@ transform: scale(1.1);
 #main-content > div:not(:first-child) {
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
+  justify-content: flex-start;
   margin: 30px 0;
+  padding-right: 1.5%;
 }
 #main-content .song {
   display: inline-block;
   text-align: center;
-  width: 178px;
-  margin-right: 15px;
+  width: calc(100% / 6.6);
+  margin-right: 1.5%;
 }
 #main-content .song img {
   width: 100%;
@@ -216,6 +221,8 @@ transform: scale(1.1);
 #main-content #artisti .layover {
   border-radius: 50%;
 }
+
+/* FOOTER  */
 footer {
   height: 90px;
   width: 100%;
@@ -266,17 +273,26 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  flex-grow: 2;
 }
 #footer-middle .player-buttons {
   display: flex;
-  padding: 0 140px;
+  /* padding: 0 140px; */
   justify-content: space-between;
   align-items: center;
 }
+#footer-middle .player-buttons .fa-step-backward {
+  margin-left: 22px;
+}
 #footer-middle .player-buttons .fa-play-circle {
   font-size: 32px;
-  margin: 0 9px;
+  margin: 0 32px;
 }
+#footer-middle .player-buttons .fa-step-forward {
+  margin-right: 22px;
+}
+
 #footer-middle .player-buttons .fas:hover {
   cursor: pointer;
 }
@@ -286,20 +302,22 @@ footer {
 }
 #footer-middle .player-bar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 12px 0 12px;
+  width: 50vw;
+  max-width: 700px;
+  padding: 0 10px;
 }
 #footer-middle time {
   font-size: 10px;
 }
 #footer-middle .progress-bar {
   display: inline-block;
-  width: 428px;
+  width: 95%;
   height: 4px;
   background-color: #5a5a5a;
   border-radius: 2px;
-  margin: 0 27px;
+  margin: 0 5%;
 }
 #footer-middle .progress-bar:hover {
   cursor: pointer;
@@ -314,7 +332,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 85px;
+  width: 20%;
   height: 4px;
   background-color: #c1c1c1;
   border-radius: 2px;
