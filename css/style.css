@@ -403,6 +403,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 5px;
 }
 #footer-left .folder a{
   margin-left: 12.5%;
