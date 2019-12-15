@@ -8,6 +8,7 @@
 }
 
 body {
+  min-width: 480px;
 }
 main {
   overflow-y: scroll;
@@ -35,7 +36,7 @@ p {
 
 /* SIDE NAVBAR  */
 #side-nav {
-  height: calc(100% - 90px);
+  height: calc(100vh - 90px);
   width: 230px;
   position: fixed;
   left: 0;
@@ -112,17 +113,17 @@ p {
 #side-nav ul li:hover {
   opacity: 1;
 }
-#side-nav #download-app {
+#side-nav .download-app {
   opacity: 0.53;
   display: flex;
   align-items: center;
   font-size: 13px;
   margin-top: 10px;
 }
-#side-nav #download-app:hover {
+#side-nav .download-app:hover {
   opacity: 1;
 }
-#side-nav #download-app img{
+.download-app img{
   width: 18px;
   height: auto;
   margin-right: 10px;
@@ -131,11 +132,11 @@ p {
   margin: 10px 0 12px;
   opacity: 0.53;
 }
-#side-nav #profile {
+.profile {
   display: flex;
   align-items: center;
 }
-#side-nav #profile-background {
+.profile-background {
   background-color: grey;
   border-radius: 50%;
   height: 25px;
@@ -143,18 +144,18 @@ p {
   overflow: hidden;
   margin-right: 10px;
 }
-#side-nav #profile-background img {
+.profile-background img {
   width: 100%;
   height: auto;
 }
-#side-nav #profile span {
+.profile span {
   font-size: 14px;
 }
 
 
 /* SIDE NAV XS */
 #side-nav-xs {
-  height: calc(100% - 90px);
+  height: calc(100vh - 90px);
   width: 50px;
   position: fixed;
   left: 0;
@@ -182,14 +183,35 @@ p {
 #side-nav-xs .index-xs a:hover {
   opacity: 1;
 }
+#side-nav-xs .download-app {
+  opacity: 0.8;
+  align-items: center;
+  font-size: 13px;
+  margin-top: 10px;
+}
+#side-nav-xs .download-app:hover {
+  opacity: 1;
+}
+#side-nav-xs .download-app img{
+  width: 18px;
+  margin-right: 3px;
+}
+#side-nav-xs .profile img {
+  width: 100%;
+  height: auto;
+
+}
+#side-nav-xs .profile-background {
+  margin: 15px 0 10px;
+}
+
 
 /* MAIN CONTENT */
 #main-content {
-  width: 100%;
-  min-height: 100%;
   background-color: #141922;
   padding-top: 110px;
   padding-left: 250px;
+  padding-bottom: 1px;
 }
 #main-content #upgrade {
   height: 90px;
@@ -212,6 +234,7 @@ p {
   margin-right: 20px;
   padding: 11.5px 36px;
   border-radius: 26px;
+  white-space: nowrap;
 }
 #main-content #upgrade a:hover {
 transform: scale(1.1);
@@ -220,6 +243,9 @@ transform: scale(1.1);
   margin-top: 0;
 }
 #main-content #main-menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
 }
 #main-content #main-menu ul hr {
@@ -259,6 +285,7 @@ transform: scale(1.1);
   text-align: center;
   width: calc(100% / 6.6);
   margin-right: 1.5%;
+  margin-bottom: 10px;
 }
 #main-content .song img {
   width: 100%;
@@ -312,6 +339,11 @@ transform: scale(1.1);
   }
   #main-content {
     padding-left: 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #side-nav-xs {
+    height: calc(100vh - 107px);
   }
 }
 @media screen and (min-width: 601px) {
@@ -404,6 +436,7 @@ footer {
   margin: 12px 0 12px;
   width: 45vw;
   max-width: 700px;
+  min-width: 230px;
   padding: 0 10px;
 }
 #footer-middle time {
