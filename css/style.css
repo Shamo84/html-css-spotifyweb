@@ -8,7 +8,7 @@
 }
 
 body {
-  min-width: 480px;
+  min-width: 300px;
 }
 main {
   overflow-y: scroll;
@@ -237,15 +237,13 @@ p {
   white-space: nowrap;
 }
 #main-content #upgrade a:hover {
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 #main-content #main-menu {
   margin-top: 0;
 }
 #main-content #main-menu ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  text-align: center;
   margin: 0 auto;
 }
 #main-content #main-menu ul hr {
@@ -333,6 +331,11 @@ transform: scale(1.1);
     width: calc(100% / 2.1);
   }
 }
+@media screen and (max-width: 400px) {
+  #main-content .song {
+    width: calc(100% / 1.05);
+  }
+}
 @media screen and (max-width: 600px) {
   #side-nav {
     display: none;
@@ -362,6 +365,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow-x: auto;
 }
 
 #footer-left {
@@ -369,7 +373,6 @@ footer {
   height: 100%;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -395,8 +398,14 @@ footer {
 #footer-left .far:hover {
   opacity: 1;
 }
-#footer-left .fa-folder {
-  margin-left: 12px;
+#footer-left .folder {
+  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#footer-left .folder a{
+  margin-left: 12.5%;
 }
 #footer-middle {
   height: 100%;
@@ -473,11 +482,16 @@ footer {
   height: 100%;
   padding: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
+#footer-right > .fas{
+  margin-right: 6.5%;
+}
 #footer-right .progress-bar {
-  width: 118px;
+  width: 11vw;
+  min-width: 40px;
+  max-width: 118px;
   height: 4px;
   background-color: #5a5a5a;
   border-radius: 2px;
