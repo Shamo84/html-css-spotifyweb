@@ -449,7 +449,7 @@ footer {
   min-width: 230px;
   padding: 0 10px;
 }
-#footer-middle time {
+#footer-middle .player-bar .time {
   font-size: 10px;
 }
 #footer-middle .progress-bar {
