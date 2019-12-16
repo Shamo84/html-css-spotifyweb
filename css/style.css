@@ -1,3 +1,4 @@
+/* GENERAL */
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +7,6 @@
   color: white;
   font-weight: 700;
 }
-
 body {
   min-width: 300px;
 }
@@ -33,7 +33,9 @@ main {
 p {
   opacity: 0.53;
 }
-
+.opacity-53 {
+  opacity: 0.53;
+}
 /* SIDE NAVBAR  */
 #side-nav {
   height: calc(100vh - 90px);
@@ -80,7 +82,6 @@ p {
   margin: 14px 0 12px;
 }
 #side-nav #crea-playlist {
-  opacity: 0.53;
   font-size: 15px;
   margin-bottom: 10px;
 }
@@ -114,7 +115,6 @@ p {
   opacity: 1;
 }
 #side-nav .download-app {
-  opacity: 0.53;
   display: flex;
   align-items: center;
   font-size: 13px;
@@ -130,7 +130,6 @@ p {
 }
 #side-nav hr {
   margin: 10px 0 12px;
-  opacity: 0.53;
 }
 .profile {
   display: flex;
@@ -386,7 +385,6 @@ footer {
 }
 #footer-left #title-mini #subtitle-mini {
   font-size: 10px;
-  opacity: 0.53;
 }
 #footer-left #title-mini:hover #subtitle-mini {
   opacity: 1;
